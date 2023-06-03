@@ -249,9 +249,9 @@
 
         var options = this.owl.options;
 
-        this._thumbcontent._thumbcontainer = $('.' + options.thumbContainerClass);
-        this._thumbcontent._thumbwrapper = $('.' + options.thumbWrapperClass);
-        this._thumbcontent._thumb = $('.' + options.thumbItemClass);
+        this._thumbcontent._thumbcontainer = $( "#" + this._thumbnails + '.' + options.thumbContainerClass);
+        this._thumbcontent._thumbwrapper = $('.' + options.thumbWrapperClass, "#"+this._thumbnails);
+        this._thumbcontent._thumb = $('.' + options.thumbItemClass, "#"+this._thumbnails);
 
         var container = this._thumbcontent._thumbcontainer.outerWidth();
         var wrapper = this._thumbcontent._thumbwrapper.outerWidth();
